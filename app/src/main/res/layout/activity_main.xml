@@ -23,6 +23,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="48dp"
         android:background="#3F51B5"
+        android:onClick="loadPuzzleActivity"
         android:text="New Game"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
