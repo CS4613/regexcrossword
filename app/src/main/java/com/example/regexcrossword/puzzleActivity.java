@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -14,10 +17,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class puzzleActivity extends AppCompatActivity {
-
+    public TextView txtViewGrid00;
+    public LetterChoiceFragment lcf = new LetterChoiceFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_puzzle);
+        txtViewGrid00 = findViewById(R.id.txtGrid00);
+        txtViewGrid00.setText("X");
         InputStream in = getResources().openRawResource(R.raw.puzzledata);
         InputStreamReader ir = new InputStreamReader(in);
         BufferedReader br = new BufferedReader(ir);
@@ -86,5 +93,18 @@ public class puzzleActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
+
+    public void clicked00(View view) {
+
+        lcf.show(getSupportFragmentManager(), "letterChoice");
+    }
+
+    public void choice00(View view) {
+        txtViewGrid00.setText("A");
+    }
+
+    public void choice11(View view) {
+        txtViewGrid00.setText("");
     }
 }
