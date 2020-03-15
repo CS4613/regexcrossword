@@ -152,49 +152,52 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-0"
+                android:id="@+id/txtGrid00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gridoutline"
+                android:clickable="true"
+                android:onClick="clicked00"
+                android:text="B" />
+
+            <TextView
+                android:id="@+id/txtGrid10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-0"
+                android:id="@+id/txtGrid20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-0"
+                android:id="@+id/txtGrid30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-0"
+                android:id="@+id/txtGrid40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-0"
+                android:id="@+id/txtGrid50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-0"
+                android:id="@+id/txtGrid60"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
-
-            <TextView
-                android:id="@+id/txtGrid-7-0"
+                android:id="@+id/txtGrid70"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -220,49 +223,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-1"
+                android:id="@+id/txtGrid01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-1"
+                android:id="@+id/txtGrid11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-1"
+                android:id="@+id/txtGrid21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-1"
+                android:id="@+id/txtGrid31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-1"
+                android:id="@+id/txtGrid41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-1"
+                android:id="@+id/txtGrid51"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-1"
+                android:id="@+id/txtGrid61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-1"
+                android:id="@+id/txtGrid71"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -288,49 +291,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-2"
+                android:id="@+id/txtGrid02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-2"
+                android:id="@+id/txtGrid12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-2"
+                android:id="@+id/txtGrid22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-2"
+                android:id="@+id/txtGrid32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-2"
+                android:id="@+id/txtGrid42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-2"
+                android:id="@+id/txtGrid52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-2"
+                android:id="@+id/txtGrid62"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-2"
+                android:id="@+id/txtGrid72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -356,49 +359,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-3"
+                android:id="@+id/txtGrid03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-3"
+                android:id="@+id/txtGrid13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-3"
+                android:id="@+id/txtGrid23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-3"
+                android:id="@+id/txtGrid33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-3"
+                android:id="@+id/txtGrid43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-3"
+                android:id="@+id/txtGrid53"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-3"
+                android:id="@+id/txtGrid63"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-3"
+                android:id="@+id/txtGrid73"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -424,49 +427,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-4"
+                android:id="@+id/txtGrid04"
                 android:layout_width="10dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-4"
+                android:id="@+id/txtGrid14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-4"
+                android:id="@+id/txtGrid24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-4"
+                android:id="@+id/txtGrid34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-4"
+                android:id="@+id/txtGrid44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-4"
+                android:id="@+id/txtGrid54"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-4"
+                android:id="@+id/txtGrid64"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-4"
+                android:id="@+id/txtGrid74"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -492,49 +495,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-5"
+                android:id="@+id/txtGrid05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-5"
+                android:id="@+id/txtGrid15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-5"
+                android:id="@+id/txtGrid25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-5"
+                android:id="@+id/txtGrid35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-5"
+                android:id="@+id/txtGrid45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-5"
+                android:id="@+id/txtGrid55"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-5"
+                android:id="@+id/txtGrid65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-5"
+                android:id="@+id/txtGrid75"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -560,49 +563,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-6"
+                android:id="@+id/txtGrid06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-6"
+                android:id="@+id/txtGrid16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-6"
+                android:id="@+id/txtGrid26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-6"
+                android:id="@+id/txtGrid36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-6"
+                android:id="@+id/txtGrid46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-6"
+                android:id="@+id/txtGrid56"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-6"
+                android:id="@+id/txtGrid66"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-6"
+                android:id="@+id/txtGrid76"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
@@ -628,49 +631,49 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/txtGrid-0-7"
+                android:id="@+id/txtGrid07"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-1-7"
+                android:id="@+id/txtGrid17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-2-7"
+                android:id="@+id/txtGrid27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-3-7"
+                android:id="@+id/txtGrid37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-4-7"
+                android:id="@+id/txtGrid47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-5-7"
+                android:id="@+id/txtGrid57"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-6-7"
+                android:id="@+id/txtGrid67"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
 
             <TextView
-                android:id="@+id/txtGrid-7-7"
+                android:id="@+id/txtGrid77"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline" />
