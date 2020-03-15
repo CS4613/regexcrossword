@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.TextView;
 
-public class VerticalTextView extends TextView {
+public class VerticalTextView extends androidx.appcompat.widget.AppCompatTextView {
     final boolean topDown;
 
     public VerticalTextView(Context context,
