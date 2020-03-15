@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void loadPuzzleActivity(View view) {
-        Intent intent = new Intent(this, puzzleActivity.class);
+    public void loadLevelSelectActivity(View view) {
+        Intent intent = new Intent(this, LevelSelectActivity.class);
         startActivity(intent);
     }
 }
