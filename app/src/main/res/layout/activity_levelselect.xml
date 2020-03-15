@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCategory0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="OR symbol"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnEasyCat0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="8dp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
+
+            <Button
+                android:id="@+id/btnMediumCat0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat0"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
+
+            <Button
+                android:id="@+id/btnHardCat0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat0"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
+
+            <TextView
+                android:id="@+id/txtCategory1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="Range of characters"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat0" />
+
+            <Button
+                android:id="@+id/btnEasyCat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
+
+            <Button
+                android:id="@+id/btnMediumCat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat1"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
+
+            <Button
+                android:id="@+id/btnHardCat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat1"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
+
+            <TextView
+                android:id="@+id/txtCategory2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="Characters NOT to include"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat1" />
+
+            <Button
+                android:id="@+id/btnEasyCat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="10dp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
+
+            <Button
+                android:id="@+id/btnMediumCat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat2"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
+
+            <Button
+                android:id="@+id/btnHardCat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat2"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
+
+            <TextView
+                android:id="@+id/txtCategory3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="Zero or more"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat2" />
+
+            <Button
+                android:id="@+id/btnEasyCat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
+
+            <Button
+                android:id="@+id/btnMediumCat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat3"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
+
+            <Button
+                android:id="@+id/btnHardCat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat3"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
+
+            <TextView
+                android:id="@+id/txtCategory4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="Zero or one"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat3" />
+
+            <Button
+                android:id="@+id/btnEasyCat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
+
+            <Button
+                android:id="@+id/btnMediumCat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat4"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
+
+            <Button
+                android:id="@+id/btnHardCat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat4"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
+
+            <TextView
+                android:id="@+id/txtCategory5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="One or more"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat4" />
+
+            <Button
+                android:id="@+id/btnEasyCat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
+
+            <Button
+                android:id="@+id/btnMediumCat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat5"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
+
+            <Button
+                android:id="@+id/btnHardCat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat5"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
+
+            <TextView
+                android:id="@+id/txtCategory6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:text="Backreference"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEasyCat5" />
+
+
+            <Button
+                android:id="@+id/btnEasyCat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:onClick="loadPuzzleActivity"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
+
+            <Button
+                android:id="@+id/btnMediumCat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnEasyCat6"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
+
+            <Button
+                android:id="@+id/btnHardCat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="#3F51B5"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/btnMediumCat6"
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
