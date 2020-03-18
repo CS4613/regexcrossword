@@ -27,7 +27,7 @@
                 android:layout_margin="10sp"
                 android:layout_marginTop="8dp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
+                android:onClick="selected00"
                 android:text="Easy"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"

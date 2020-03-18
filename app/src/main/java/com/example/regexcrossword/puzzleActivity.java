@@ -24,7 +24,6 @@ public class puzzleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
         txtViewGrid00 = findViewById(R.id.txtGrid00);
-        txtViewGrid00.setText("X");
         InputStream in = getResources().openRawResource(R.raw.puzzledata);
         InputStreamReader ir = new InputStreamReader(in);
         BufferedReader br = new BufferedReader(ir);
@@ -101,10 +100,24 @@ public class puzzleActivity extends AppCompatActivity {
     }
 
     public void choice00(View view) {
-        txtViewGrid00.setText("A");
+        //txtViewGrid00.setText("A");
+        updateTextView("A");
+        lcf.dismiss();
     }
 
     public void choice11(View view) {
         txtViewGrid00.setText("");
+        lcf.dismiss();
+    }
+
+    private void updateTextView(final String s) {
+        puzzleActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                TextView tv = (TextView) findViewById(R.id.txtGrid00);
+                tv.setText(s);
+            }
+        });
+
     }
 }
