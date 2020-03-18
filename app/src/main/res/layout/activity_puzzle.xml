@@ -52,7 +52,7 @@
                 android:id="@+id/txtPaddingTopLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="120sp"
-                android:gravity="right"
+                android:gravity="center_horizontal"
                 android:paddingRight="10sp" />
 
             <com.example.regexcrossword.VerticalTextView
@@ -132,14 +132,15 @@
                 android:id="@+id/txtPaddingTopRight"
                 android:layout_width="wrap_content"
                 android:layout_height="120sp"
-                android:gravity="right"
+                android:gravity="center_horizontal"
                 android:paddingRight="10sp" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft0"
@@ -157,59 +158,69 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline"
                 android:clickable="true"
-                android:onClick="clicked00"                />
+                android:gravity="center"
+                android:onClick="clicked00" />
 
             <TextView
                 android:id="@+id/txtGrid10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid60"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid70"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft1"
@@ -225,59 +236,69 @@
                 android:id="@+id/txtGrid01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid51"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid71"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft2"
@@ -293,59 +314,69 @@
                 android:id="@+id/txtGrid02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid62"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft3"
@@ -361,59 +392,69 @@
                 android:id="@+id/txtGrid03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid53"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid63"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid73"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft4"
@@ -429,59 +470,69 @@
                 android:id="@+id/txtGrid04"
                 android:layout_width="10dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid54"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid64"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid74"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft5"
@@ -497,59 +548,69 @@
                 android:id="@+id/txtGrid05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid55"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid75"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtPaddingLeft6"
@@ -565,54 +626,63 @@
                 android:id="@+id/txtGrid06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid56"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid66"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid76"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
         <TableRow
@@ -633,54 +703,63 @@
                 android:id="@+id/txtGrid07"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid57"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid67"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtGrid77"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gridoutline" />
+                android:background="@drawable/gridoutline"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/txtPaddingRight7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:gravity="center" />
         </TableRow>
 
     </TableLayout>
