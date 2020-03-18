@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LevelSelectActivity.class);
         startActivity(intent);
     }
+
+    public void loadTutorialSelectActivity(View view) {
+        Intent intent = new Intent(this, TutorialSelectActivity.class);
+        startActivity(intent);
+    }
 }

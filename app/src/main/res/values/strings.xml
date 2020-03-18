@@ -3,4 +3,35 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings used in tutorial_activity  -->
+    <string name="or_tutoral_text">Some text giving some basic instructions on what OR is and how to solve the puzzle. Place holder text. </string>
+    <string name="or_tutoral_upper_regex">A | B</string>
+    <string name="or_tutoral_left_regex">B | C</string>
+
+    <string name="range_of_char_tutoral_text">Some text giving some basic instructions on what Range of Characters is and how to solve the puzzle. Place holder text. </string>
+    <string name="range_of_char_tutoral_upper_regex">[ABCD]</string>
+    <string name="range_of_char_tutoral_left_regex">[DEFG]</string>
+
+    <string name="chars_not_to_include_tutoral_text">Some text giving some basic instructions on what characters to not include and how to solve the puzzle. Place holder text. </string>
+    <string name="chars_not_to_include_tutoral_upper_regex">[^A]</string>
+    <string name="chars_not_to_include_tutoral_left_regex">[CDE]</string>
+
+    <string name="zero_or_more_tutoral_text">Some text giving some basic instructions on what Zero or more characters is and how to solve the puzzle. Place holder text. </string>
+    <string name="zero_or_more_tutoral_upper_regex">[A*]</string>
+    <string name="zero_or_more_tutoral_left_regex">[ABCDE]</string>
+
+    <string name="zero_or_one_tutoral_text">Some text giving some basic instructions on what zero or one is and how to solve the puzzle. Place holder text. </string>
+    <string name="zero_or_one_tutoral_upper_regex">[A?B?C?]</string>
+    <string name="zero_or_one_tutoral_left_regex">[B]</string>
+
+    <string name="one_or_more_tutoral_text">Some text giving some basic instructions on what one or more is and how to solve the puzzle. Place holder text. </string>
+    <string name="one_or_more_tutoral_upper_regex">[A | B | C]</string>
+    <string name="one_or_more_tutoral_left_regex">[B+]</string>
+
+    <string name="backreference_tutoral_text">Some text giving some basic instructions on what  backrefernce is and how to solve the puzzle. Place holder text. </string>
+    <string name="backreference_upper_regex">example Regex here</string>
+    <string name="backreference_left_regex">example regex here</string>
+    <!-- END of Strings used in tutorial_activity  -->
+
 </resources>
