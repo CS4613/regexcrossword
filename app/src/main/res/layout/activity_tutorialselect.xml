@@ -27,38 +27,12 @@
                 android:layout_margin="10sp"
                 android:layout_marginTop="8dp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="OR Symbol Tutorial"
+                android:tag="0"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
-
-            <Button
-                android:id="@+id/btnMediumCat0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginStart="9dp"
-                android:layout_marginTop="10dp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat0"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
-
-            <Button
-                android:id="@+id/btnHardCat0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat0"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
 
             <Button
@@ -67,32 +41,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="Range of Characters Tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
-
-            <Button
-                android:id="@+id/btnMediumCat1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat1"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
-
-            <Button
-                android:id="@+id/btnHardCat1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat1"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
 
             <Button
@@ -102,32 +55,11 @@
                 android:layout_margin="10sp"
                 android:layout_marginTop="10dp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="Characters NOT to include Tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
-
-            <Button
-                android:id="@+id/btnMediumCat2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat2"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
-
-            <Button
-                android:id="@+id/btnHardCat2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat2"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
 
             <Button
@@ -136,32 +68,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="Zero or more tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
-
-            <Button
-                android:id="@+id/btnMediumCat3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat3"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
-
-            <Button
-                android:id="@+id/btnHardCat3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat3"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
 
             <Button
@@ -170,32 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="Zero or one tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
-
-            <Button
-                android:id="@+id/btnMediumCat4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat4"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
-
-            <Button
-                android:id="@+id/btnHardCat4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat4"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
 
             <Button
@@ -204,32 +94,12 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:tag="oneormore"
+                android:text="One or more tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
-
-            <Button
-                android:id="@+id/btnMediumCat5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat5"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
-
-            <Button
-                android:id="@+id/btnHardCat5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat5"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
 
             <Button
@@ -238,32 +108,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
                 android:background="#3F51B5"
-                android:onClick="loadPuzzleActivity"
-                android:text="Easy"
+                android:onClick="loadTutorialActivity"
+                android:text="Backreference tutorial"
                 android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
-
-            <Button
-                android:id="@+id/btnMediumCat6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Medium"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnEasyCat6"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
-
-            <Button
-                android:id="@+id/btnHardCat6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:background="#3F51B5"
-                android:text="Hard"
-                android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/btnMediumCat6"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
 
             <TextView
@@ -353,5 +202,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
