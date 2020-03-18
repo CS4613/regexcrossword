@@ -157,8 +157,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/gridoutline"
                 android:clickable="true"
-                android:onClick="clicked00"
-                android:text="B" />
+                android:onClick="clicked00"                />
 
             <TextView
                 android:id="@+id/txtGrid10"
