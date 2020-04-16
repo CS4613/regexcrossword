@@ -3,6 +3,7 @@ package com.example.regexcrossword;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -19,14 +20,28 @@ import java.io.InputStreamReader;
 import static java.lang.Integer.*;
 
 public class puzzleActivity extends AppCompatActivity {
-    public TextView txtViewGrid00;
     public String position;
     public LetterChoiceFragment lcf = new LetterChoiceFragment();
+    public int difficulty;
+    public int level;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
-        txtViewGrid00 = findViewById(R.id.txtGrid00);
+
+        Context context = getApplicationContext();
+        Intent intent = getIntent();
+        difficulty = intent.getIntExtra("difficulty", 0);
+        level = intent.getIntExtra("level", 0);
+
+        CharSequence text = "Level: " + String.valueOf(level) +
+                " Difficulty: " + String.valueOf(difficulty);
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
         InputStream in = getResources().openRawResource(R.raw.puzzledata);
         InputStreamReader ir = new InputStreamReader(in);
         BufferedReader br = new BufferedReader(ir);
