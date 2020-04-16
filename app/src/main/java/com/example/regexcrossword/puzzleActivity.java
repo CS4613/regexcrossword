@@ -16,8 +16,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import static java.lang.Integer.*;
+
 public class puzzleActivity extends AppCompatActivity {
     public TextView txtViewGrid00;
+    public String position;
     public LetterChoiceFragment lcf = new LetterChoiceFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +43,11 @@ public class puzzleActivity extends AppCompatActivity {
             String [] data = readLine.split(";"); //diff(int)|level(int)|possibleLetter|x|y|solution
 
             // get the integer difficulty data
-            int diff = Integer.parseInt(data[0]);
+            int diff = parseInt(data[0]);
             Log.d("Difficulty", String.valueOf(diff));
 
             // get the integer level data
-            int level = Integer.parseInt(data[1]);
+            int level = parseInt(data[1]);
             System.out.println("Level: " + level);
 
             // this is possible letter
@@ -57,7 +60,7 @@ public class puzzleActivity extends AppCompatActivity {
                 System.out.print(x[i] + "  ");
             System.out.println();
 
-            // split the verticle values
+            // split the vertical values
             String [] y = data[4].split("`");
             System.out.print("Y values: ");
             for(int i = 0; i < y.length; i++)
@@ -94,30 +97,26 @@ public class puzzleActivity extends AppCompatActivity {
         toast.show();
     }
 
-    public void clicked00(View view) {
-
-        lcf.show(getSupportFragmentManager(), "letterChoice");
-    }
-
-    public void choice00(View view) {
-        //txtViewGrid00.setText("A");
-        updateTextView("A");
+    public void letterChoice(View view) {
+        String choice = (String) view.getTag();
+        updateTextView(choice, position);
         lcf.dismiss();
     }
 
-    public void choice11(View view) {
-        txtViewGrid00.setText("");
-        lcf.dismiss();
-    }
-
-    private void updateTextView(final String s) {
+    private void updateTextView(final String s, final String gridPosition) {
         puzzleActivity.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                TextView tv = (TextView) findViewById(R.id.txtGrid00);
+                int resID = getResources().getIdentifier("txtGrid"+gridPosition,
+                        "id", getPackageName());
+                TextView tv = (TextView) findViewById(resID);
                 tv.setText(s);
             }
         });
+    }
 
+    public void gridClicked(View view){
+        position = (String) view.getTag();
+        lcf.show(getSupportFragmentManager(), "letterChoice");
     }
 }
