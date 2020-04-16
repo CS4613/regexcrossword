@@ -159,14 +159,9 @@
                 android:background="@drawable/gridoutline"
                 android:clickable="true"
                 android:gravity="center"
-<<<<<<< HEAD
                 android:onClick="gridClicked"
                 android:tag="00" />
 
-=======
-                android:onClick="clicked00" />
-          
->>>>>>> 9aad2dcd540dad31c0866914b6d188879624748f
             <TextView
                 android:id="@+id/txtGrid10"
                 android:layout_width="wrap_content"
