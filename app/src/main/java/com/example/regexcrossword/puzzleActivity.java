@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +25,7 @@ public class puzzleActivity extends AppCompatActivity {
     public String [] data;
     public String [] x;
     public String [] y;
+    int size = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +112,6 @@ public class puzzleActivity extends AppCompatActivity {
     }
 
     protected void onStart() {
-        int size = 0;
         int catid = getResources().getIdentifier("category"+level+"_name", "string", getPackageName());
         TextView cattv = (TextView) findViewById(R.id.textCategory);
         cattv.setText(catid);
@@ -131,6 +129,8 @@ public class puzzleActivity extends AppCompatActivity {
         if (difficulty == 2) {
             size = 8;
         }
+        // Tag validate button with puzzle size to pass to validation function
+        ((TextView) findViewById(R.id.btnValidate)).setTag(size);
             // Hide unused elements
             for (int i = size; i < 8; i++) {
                 int resID = getResources().getIdentifier("txtRegexColumn"+i,
@@ -142,13 +142,19 @@ public class puzzleActivity extends AppCompatActivity {
                 resID = getResources().getIdentifier("txtPaddingRight"+i,
                         "id", getPackageName());
                 ((TextView)findViewById(resID)).setVisibility(TextView.GONE);
-                for (int j = 0; j < size; j++) {
-                    resID = getResources().getIdentifier("txtGrid" + j + i,
+            }
+            for (int i = 0; i < 8; i++) {
+                for (int j = size; j < 8; j++) {
+                    int resID = getResources().getIdentifier("txtGrid" + j + i,
                             "id", getPackageName());
                     ((TextView) findViewById(resID)).setVisibility(TextView.GONE);
+                    resID = getResources().getIdentifier("txtGrid" + i + j,
+                            "id", getPackageName());
+                    ((TextView) findViewById(resID)).setVisibility(TextView.GONE);
+                    Log.d("Hiding: ", "txtGrid" + j + i);
+                    Log.d("Hiding: ", "txtGrid" + i + j);
                 }
             }
-
             // Populate regex columns and rows
             for (int i = 0; i < size; i++) {
                 int resID = getResources().getIdentifier("txtRegexColumn" + i,
@@ -162,8 +168,31 @@ public class puzzleActivity extends AppCompatActivity {
     }
 
     public void checkPuzzleSolution(View view) {
+        String userSolution = "";
+        int size = Integer.parseInt(findViewById(R.id.btnValidate).getTag().toString());
+        CharSequence text = "";
+
+        Log.d("Puzzle size: ", Integer.toString(size));
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                int resID = getResources().getIdentifier("txtGrid"+ j + i,
+                        "id", getPackageName());
+                Log.d("Checking: ", "txtGrid"+ j + i);
+                String tmp = ((TextView)findViewById(resID)).getText().toString();
+                Log.d("Temp: ", tmp);
+                userSolution = userSolution + tmp;
+            }
+        }
+        Log.d("userSolution: ", String.valueOf(userSolution));
         Context context = getApplicationContext();
-        CharSequence text = "Coming soon!";
+
+        if (userSolution.compareTo(data[5]) != 0) {
+            text = "Incorrect! Try Again!";
+        }
+        else {
+            text = "Correct!";
+        }
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -189,6 +218,7 @@ public class puzzleActivity extends AppCompatActivity {
 
     public void gridClicked(View view){
         position = (String) view.getTag();
+        Log.d("Clicked: ", position);
         Bundle bundle = new Bundle();
         bundle.putString("values", data[2]);
         lcf.setArguments(bundle);
