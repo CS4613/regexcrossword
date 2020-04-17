@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Regex Crossword</string>
 
+    <string name="category0_name">OR Symbol</string>
+    <string name="category1_name">Range of characters</string>
+    <string name="category2_name">Characters NOT to include</string>
+    <string name="category3_name">Zero or more</string>
+    <string name="category4_name">Zero or one</string>
+    <string name="category5_name">One or more</string>
+    <string name="category6_name">Backreference</string>
+
+    <string name="difficulty0_name">Easy</string>
+    <string name="difficulty1_name">Medium</string>
+    <string name="difficulty2_name">Hard</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

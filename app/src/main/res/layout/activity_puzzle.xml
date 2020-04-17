@@ -7,12 +7,12 @@
     tools:context=".puzzleActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:text="Category: Asterisks"
+        android:text="Category: Test"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.058" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textDifficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -30,7 +30,7 @@
         android:text="Level: 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textCategory"
         app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textDifficulty">
 
         <TableRow
             android:layout_width="match_parent"
