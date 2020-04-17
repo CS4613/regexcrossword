@@ -24,6 +24,7 @@ public class puzzleActivity extends AppCompatActivity {
     public LetterChoiceFragment lcf = new LetterChoiceFragment();
     public int difficulty;
     public int level;
+    public String [] data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,58 +36,70 @@ public class puzzleActivity extends AppCompatActivity {
         difficulty = intent.getIntExtra("difficulty", 0);
         level = intent.getIntExtra("level", 0);
 
-
         InputStream in = getResources().openRawResource(R.raw.puzzledata);
         InputStreamReader ir = new InputStreamReader(in);
         BufferedReader br = new BufferedReader(ir);
+        boolean found = false;
         String readLine = null;
+
         try {
             readLine = br.readLine();
         } catch (IOException e) {
             Log.d("Error", "Can't read data file!");
             e.printStackTrace();
         }
-        while(readLine != null)
+
+        while(readLine != null && !found)
         {
             // read one line and store into array between each category
-            String [] data = readLine.split(";"); //diff(int)|level(int)|possibleLetter|x|y|solution
+            data = readLine.split(";"); //diff(int)|level(int)|possibleLetter|x|y|solution
 
             // get the integer difficulty data
             int diff = parseInt(data[0]);
-            Log.d("Difficulty", String.valueOf(diff));
+            if (diff == difficulty) {
 
-            // get the integer level data
-            int level = parseInt(data[1]);
-            System.out.println("Level: " + level);
+                // get the integer level data
+                int lev = parseInt(data[1]);
+                if (lev == level) {
+                    found = true;
+                    Log.d("Found: ", "true!");
+                    // this is possible letter
+                    System.out.println("Possible Letter: " + data[2]);
 
-            // this is possible letter
-            System.out.println("Possible Letter: " + data[2]);
+                    // split the horizontal values
+                    String[] x = data[3].split("`");
+                    System.out.print("X values: ");
+                    for (int i = 0; i < x.length; i++)
+                        System.out.print(x[i] + "  ");
+                    System.out.println();
 
-            // split the horizontal values
-            String [] x = data[3].split("`");
-            System.out.print("X values: ");
-            for(int i = 0; i < x.length; i++)
-                System.out.print(x[i] + "  ");
-            System.out.println();
+                    // split the vertical values
+                    String[] y = data[4].split("`");
+                    System.out.print("Y values: ");
+                    for (int i = 0; i < y.length; i++)
+                        System.out.print(y[i] + "  ");
+                    System.out.println();
 
-            // split the vertical values
-            String [] y = data[4].split("`");
-            System.out.print("Y values: ");
-            for(int i = 0; i < y.length; i++)
-                System.out.print(y[i] + "  ");
-            System.out.println();
+                    // print out solution
+                    System.out.println("Solution: " + data[5]);
 
-            // print out solution
-            System.out.println("Solution: " + data[5]);
-
-            // end of one data "one line read"
-            System.out.println("end\n");
-
-            // get the next line
-            try {
-                readLine = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
+                }
+                else {
+                    // get the next line
+                    try {
+                        readLine = br.readLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            else {
+                // get the next line
+                try {
+                    readLine = br.readLine();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         try {
@@ -113,7 +126,6 @@ public class puzzleActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         CharSequence text = "Coming soon!";
         int duration = Toast.LENGTH_SHORT;
-
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
@@ -136,18 +148,11 @@ public class puzzleActivity extends AppCompatActivity {
         });
     }
 
-    private void updateDifficulty(final String difficulty) {
-        puzzleActivity.this.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                TextView tv = (TextView) findViewById(R.id.textDifficulty);
-                tv.setText(difficulty);
-            }
-        });
-    }
-
     public void gridClicked(View view){
         position = (String) view.getTag();
+        Bundle bundle = new Bundle();
+        bundle.putString("values", data[2]);
+        lcf.setArguments(bundle);
         lcf.show(getSupportFragmentManager(), "letterChoice");
     }
 }
