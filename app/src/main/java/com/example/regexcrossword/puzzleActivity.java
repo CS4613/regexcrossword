@@ -25,6 +25,8 @@ public class puzzleActivity extends AppCompatActivity {
     public int difficulty;
     public int level;
     public String [] data;
+    public String [] x;
+    public String [] y;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,14 +69,14 @@ public class puzzleActivity extends AppCompatActivity {
                     System.out.println("Possible Letter: " + data[2]);
 
                     // split the horizontal values
-                    String[] x = data[3].split("`");
+                    x = data[3].split("`");
                     System.out.print("X values: ");
                     for (int i = 0; i < x.length; i++)
                         System.out.print(x[i] + "  ");
                     System.out.println();
 
                     // split the vertical values
-                    String[] y = data[4].split("`");
+                    y = data[4].split("`");
                     System.out.print("Y values: ");
                     for (int i = 0; i < y.length; i++)
                         System.out.print(y[i] + "  ");
@@ -111,6 +113,7 @@ public class puzzleActivity extends AppCompatActivity {
     }
 
     protected void onStart() {
+        int size = 0;
         int catid = getResources().getIdentifier("category"+level+"_name", "string", getPackageName());
         TextView cattv = (TextView) findViewById(R.id.textCategory);
         cattv.setText(catid);
@@ -119,6 +122,42 @@ public class puzzleActivity extends AppCompatActivity {
         TextView levtv = (TextView) findViewById(R.id.textDifficulty);
         levtv.setText(diffid);
 
+        if (difficulty == 0) {
+            size = 2;
+        }
+        if (difficulty == 1) {
+            size = 4;
+        }
+        if (difficulty == 2) {
+            size = 8;
+        }
+            // Hide unused elements
+            for (int i = size; i < 8; i++) {
+                int resID = getResources().getIdentifier("txtRegexColumn"+i,
+                        "id", getPackageName());
+                ((TextView)findViewById(resID)).setVisibility(TextView.GONE);
+                resID = getResources().getIdentifier("txtPaddingLeft"+i,
+                        "id", getPackageName());
+                ((TextView)findViewById(resID)).setVisibility(TextView.GONE);
+                resID = getResources().getIdentifier("txtPaddingRight"+i,
+                        "id", getPackageName());
+                ((TextView)findViewById(resID)).setVisibility(TextView.GONE);
+                for (int j = 0; j < size; j++) {
+                    resID = getResources().getIdentifier("txtGrid" + j + i,
+                            "id", getPackageName());
+                    ((TextView) findViewById(resID)).setVisibility(TextView.GONE);
+                }
+            }
+
+            // Populate regex columns and rows
+            for (int i = 0; i < size; i++) {
+                int resID = getResources().getIdentifier("txtRegexColumn" + i,
+                        "id", getPackageName());
+                ((TextView) findViewById(resID)).setText(x[i]);
+                resID = getResources().getIdentifier("txtPaddingLeft" + i,
+                        "id", getPackageName());
+                ((TextView) findViewById(resID)).setText(y[i]);
+            }
         super.onStart();
     }
 
