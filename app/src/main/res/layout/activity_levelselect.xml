@@ -29,7 +29,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="00"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
@@ -45,7 +45,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="10"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat0"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
@@ -64,7 +64,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat0"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory0" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory0"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat1"
@@ -74,7 +75,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="01"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
@@ -87,7 +88,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="11"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat1"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
@@ -103,7 +104,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat1"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory1" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory1"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat2"
@@ -114,7 +116,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="02"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
@@ -127,7 +129,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="12"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat2"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
@@ -143,7 +145,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat2"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory2" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory2"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat3"
@@ -153,7 +156,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="03"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
@@ -166,7 +169,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="13"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat3"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
@@ -182,7 +185,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat3"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory3" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory3"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat4"
@@ -192,7 +196,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="04"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
@@ -205,7 +209,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="14"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat4"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
@@ -221,7 +225,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat4"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory4" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory4"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat5"
@@ -231,7 +236,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="05"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
@@ -244,7 +249,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="15"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat5"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
@@ -260,7 +265,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat5"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory5" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory5"
+                tools:text="@string/difficulty2_name" />
 
             <Button
                 android:id="@+id/btnEasyCat6"
@@ -270,7 +276,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="06"
-                android:text="Easy"
+                android:text="@string/difficulty0_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
@@ -283,7 +289,7 @@
                 android:background="#3F51B5"
                 android:onClick="selectedLevel"
                 android:tag="16"
-                android:text="Medium"
+                android:text="@string/difficulty1_name"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnEasyCat6"
                 app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
@@ -299,7 +305,8 @@
                 android:text="Hard"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/btnMediumCat6"
-                app:layout_constraintTop_toBottomOf="@+id/txtCategory6" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCategory6"
+                tools:text="@string/difficulty2_name" />
 
             <TextView
                 android:id="@+id/txtCategory0"
@@ -307,7 +314,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="OR symbol"
+                android:text="@string/category0_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -319,7 +326,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="Range of characters"
+                android:text="@string/category1_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -331,7 +338,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="Characters NOT to include"
+                android:text="@string/category2_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -343,7 +350,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="Zero or more"
+                android:text="@string/category3_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -356,7 +363,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="Zero or one"
+                android:text="@string/category4_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -368,7 +375,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="One or more"
+                android:text="@string/category5_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -380,7 +387,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10sp"
                 android:paddingTop="10sp"
-                android:text="Backreference"
+                android:text="@string/category6_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#3F51B5"
                 app:layout_constraintStart_toStartOf="parent"

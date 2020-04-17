@@ -35,12 +35,6 @@ public class puzzleActivity extends AppCompatActivity {
         difficulty = intent.getIntExtra("difficulty", 0);
         level = intent.getIntExtra("level", 0);
 
-        CharSequence text = "Level: " + String.valueOf(level) +
-                " Difficulty: " + String.valueOf(difficulty);
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
 
         InputStream in = getResources().openRawResource(R.raw.puzzledata);
         InputStreamReader ir = new InputStreamReader(in);
@@ -103,6 +97,18 @@ public class puzzleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_puzzle);
     }
 
+    protected void onStart() {
+        int catid = getResources().getIdentifier("category"+level+"_name", "string", getPackageName());
+        TextView cattv = (TextView) findViewById(R.id.textCategory);
+        cattv.setText(catid);
+
+        int diffid = getResources().getIdentifier("difficulty"+difficulty+"_name", "string", getPackageName());
+        TextView levtv = (TextView) findViewById(R.id.textDifficulty);
+        levtv.setText(diffid);
+
+        super.onStart();
+    }
+
     public void checkPuzzleSolution(View view) {
         Context context = getApplicationContext();
         CharSequence text = "Coming soon!";
@@ -126,6 +132,16 @@ public class puzzleActivity extends AppCompatActivity {
                         "id", getPackageName());
                 TextView tv = (TextView) findViewById(resID);
                 tv.setText(s);
+            }
+        });
+    }
+
+    private void updateDifficulty(final String difficulty) {
+        puzzleActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                TextView tv = (TextView) findViewById(R.id.textDifficulty);
+                tv.setText(difficulty);
             }
         });
     }

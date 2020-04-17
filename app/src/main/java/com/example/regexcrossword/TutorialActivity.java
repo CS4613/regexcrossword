@@ -1,8 +1,6 @@
 package com.example.regexcrossword;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -30,8 +28,8 @@ public class TutorialActivity extends AppCompatActivity {
         TextView upperRegexColumn = (TextView) findViewById(R.id.txtRegexColumn0);
         TextView leftRegexColumn = (TextView) findViewById(R.id.txtPaddingLeft0);
         TextView tutorialTextBox = (TextView) findViewById(R.id.tutorial_text);
-        TextView categoryTextBox = (TextView) findViewById(R.id.textView);
-        TextView levelTextBox = (TextView) findViewById(R.id.textView2);
+        TextView categoryTextBox = (TextView) findViewById(R.id.textCategory);
+        TextView levelTextBox = (TextView) findViewById(R.id.textDifficulty);
         levelTextBox.setText("Tutorial: " + tutorial + "/6");
 
         switch (tutorial){
