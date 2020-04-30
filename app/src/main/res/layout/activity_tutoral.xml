@@ -34,14 +34,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.example.regexcrossword.VerticalTextView
+            <com.mitchellclay.regexcrossword.VerticalTextView
                 android:id="@+id/txtPaddingTopLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="120sp"
                 android:gravity="right"
                 android:paddingRight="10sp" />
 
-            <com.example.regexcrossword.VerticalTextView
+            <com.mitchellclay.regexcrossword.VerticalTextView
                 android:id="@+id/txtRegexColumn0"
                 android:layout_width="wrap_content"
                 android:layout_height="120sp"

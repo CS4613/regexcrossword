@@ -1,4 +1,4 @@
-package com.example.regexcrossword;
+package com.mitchellclay.regexcrossword;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.regexcrossword", appContext.getPackageName());
+        assertEquals("com.mitchellclay.regexcrossword", appContext.getPackageName());
     }
 }

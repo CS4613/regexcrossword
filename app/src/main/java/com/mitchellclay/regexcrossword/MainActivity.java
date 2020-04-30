@@ -1,4 +1,4 @@
-package com.example.regexcrossword;
+package com.mitchellclay.regexcrossword;
 
 import androidx.appcompat.app.AppCompatActivity;
 

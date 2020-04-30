@@ -1,4 +1,4 @@
-package com.example.regexcrossword;
+package com.mitchellclay.regexcrossword;
 
 import android.content.Context;
 import android.graphics.Canvas;
