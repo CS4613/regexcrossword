@@ -1,4 +1,4 @@
-package com.example.regexcrossword;
+package com.mitchellclay.regexcrossword;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import com.mitchellclay.regexcrossword.R;
 
 
 public class LetterChoiceFragment extends DialogFragment {
