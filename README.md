@@ -1,5 +1,5 @@
 # Regex Crossword
-![Screenshot](https://github.com/CS4613/regexcrossword/example.png)
+![Screenshot](https://github.com/CS4613/regexcrossword/blob/master/example.png?raw=true)
 ## Team members
 Mitchell Clay, Cody Mace, Roth In
 ## Description
