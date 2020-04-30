@@ -1,4 +1,5 @@
 # Regex Crossword
+![Screenshot](https://github.com/CS4613/regexcrossword/example.png)
 ## Team members
 Mitchell Clay, Cody Mace, Roth In
 ## Description
@@ -10,3 +11,4 @@ Regex crossword is a type of puzzle where the crossword clues are regular expres
 * Puzzle selection screen
 * Progress/state storage 
 * Tutorial text 
+
