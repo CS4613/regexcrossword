@@ -11,10 +11,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
-        android:onClick="nextTutorial"
+        android:onClick="nextTutorialButtonClicked"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:onClick="prevTutorialButtonClicked"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
@@ -73,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/gridoutline"
                 android:clickable="true"
-                android:onClick="clickTutorialBox" />
+                android:onClick="gridClicked" />
             <!--android:text="B"-->
 
 
@@ -143,12 +156,14 @@
 
     <TextView
         android:id="@+id/tutorial_text"
-        android:layout_width="414dp"
-        android:layout_height="207dp"
-        android:text="@string/or_tutoral_text"
+        android:layout_width="405dp"
+        android:layout_height="197dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/or_tutorial_text"
         app:layout_constraintBottom_toTopOf="@+id/next_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
