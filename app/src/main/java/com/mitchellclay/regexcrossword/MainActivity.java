@@ -2,9 +2,11 @@ package com.mitchellclay.regexcrossword;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void loadTutorialActivity(View view) {
         Intent intent = new Intent(this, TutorialActivity.class);
         startActivity(intent);
+
     }
 
 }

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="36dp"
         android:contentDescription="logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="232dp"
         android:layout_height="50dp"
         android:layout_marginTop="48dp"
-        android:background="#3F51B5"
+        android:background="@drawable/roundedbutton"
         android:onClick="loadLevelSelectActivity"
         android:text="New Game"
         android:textColor="#FFFFFF"
@@ -37,16 +37,14 @@
         android:id="@+id/tutorial_button"
         android:layout_width="232dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
-        android:background="#3F51B5"
-        android:onClick="loadTutorialActivity"
+        android:background="@drawable/roundedbutton"
+        android:onClick="loadTutorialSelectActivity"
         android:text="Tutorial"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.091" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
