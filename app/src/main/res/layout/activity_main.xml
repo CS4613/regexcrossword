@@ -38,7 +38,7 @@
         android:layout_width="232dp"
         android:layout_height="50dp"
         android:background="@drawable/roundedbutton"
-        android:onClick="loadTutorialSelectActivity"
+        android:onClick="loadTutorialActivity"
         android:text="Tutorial"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
