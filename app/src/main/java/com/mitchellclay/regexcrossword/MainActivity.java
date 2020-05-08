@@ -21,13 +21,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void loadTutorialSelectActivity(View view) {
-        //Intent intent = new Intent(this, TutorialSelectActivity.class);
-        //startActivity(intent);
-        Context context = getApplicationContext();
-        String text = "Coming soon!";
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+    public void loadTutorialActivity(View view) {
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
+
     }
+
 }

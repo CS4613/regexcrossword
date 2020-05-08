@@ -17,33 +17,33 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Strings used in tutorial_activity  -->
-    <string name="or_tutoral_text">Some text giving some basic instructions on what OR is and how to solve the puzzle. Place holder text. </string>
-    <string name="or_tutoral_upper_regex">A | B</string>
-    <string name="or_tutoral_left_regex">B | C</string>
+    <string name="or_tutorial_text">In regular expression notation an OR is denoted by the ‘|’ character. It means that for an expression either expression can be accepted. In the puzzle above the expressions “A | B | C” and “B | D” are both present. To satisfy the first expression of “A | B | C” an A, B, or C can be entered. To satisfy the second expression of “B | D” an B or D can be entered. Since the two expressions are both aligned with one box the answer is a character that is accepted by both expressions. In this case ‘B’ is accepted by both expressions so ‘B’ is the correct character!</string>
+    <string name="or_tutorial_upper_regex">A | B |C </string>
+    <string name="or_tutorial_left_regex">B | D</string>
 
-    <string name="range_of_char_tutoral_text">Some text giving some basic instructions on what Range of Characters is and how to solve the puzzle. Place holder text. </string>
-    <string name="range_of_char_tutoral_upper_regex">[ABCD]</string>
-    <string name="range_of_char_tutoral_left_regex">[DEFG]</string>
+    <string name="range_of_char_tutoral_text">In regular expression notation a range of characters can be denoted by characters inside square brackets. [ABCD] means that A, B, C, or D can satisfy the expression. In the example above the other expression is [DEFG] which means D, E, F, or G is accepted by that expression. Combining the two expressions leaves us with an answer of ‘D’. </string>
+    <string name="range_of_char_tutorial_upper_regex">[ABCD]</string>
+    <string name="range_of_char_tutorial_left_regex">[DEFG]</string>
 
-    <string name="chars_not_to_include_tutoral_text">Some text giving some basic instructions on what characters to not include and how to solve the puzzle. Place holder text. </string>
-    <string name="chars_not_to_include_tutoral_upper_regex">[^A]</string>
+    <string name="chars_not_to_include_tutorial_text">In regular expression notation it is possible to list character that are not to be included. This is done with the ‘^’ character. In the example above ‘[^A]’ is given as one of the expressions. This means that A should not be in the answer to satisfy the expression. This may apply to multiple characters too. For example, [^ABCD] means characters that are not A, B, C, or D.</string>
+    <string name="chars_not_to_include_tutorial_upper_regex">[^A]</string>
     <string name="chars_not_to_include_tutoral_left_regex">[CDE]</string>
 
-    <string name="zero_or_more_tutoral_text">Some text giving some basic instructions on what Zero or more characters is and how to solve the puzzle. Place holder text. </string>
-    <string name="zero_or_more_tutoral_upper_regex">[A*]</string>
-    <string name="zero_or_more_tutoral_left_regex">[ABCDE]</string>
+    <string name="zero_or_more_tutorial_text">In regular expression notation it is possible to have a character zero or more times by using the ‘*’. This means that the character may be there zero, one, or more times. In the example above one of the expressions is ‘A*’ which means there may or may not be an ‘A’ depending on the other expressions in the puzzle.</string>
+    <string name="zero_or_more_tutorial_upper_regex">[A*]</string>
+    <string name="zero_or_more_tutorial_left_regex">B</string>
 
-    <string name="zero_or_one_tutoral_text">Some text giving some basic instructions on what zero or one is and how to solve the puzzle. Place holder text. </string>
-    <string name="zero_or_one_tutoral_upper_regex">[A?B?C?]</string>
-    <string name="zero_or_one_tutoral_left_regex">[B]</string>
+    <string name="zero_or_one_tutorial_text">In regular expression notation it is possible to have a character zero or one times by using the ‘?’. This means that the character may be there, or it may not be there. In the example above one of the expressions is “A?” which means that the solution to this expression could be a single A or zero As. Combined that with the other expression of just “A” then the answer is “A” since it meets both expressions. </string>
+    <string name="zero_or_one_tutorial_upper_regex">A?</string>
+    <string name="zero_or_one_tutorial_left_regex">A</string>
 
-    <string name="one_or_more_tutoral_text">Some text giving some basic instructions on what one or more is and how to solve the puzzle. Place holder text. </string>
-    <string name="one_or_more_tutoral_upper_regex">[A | B | C]</string>
-    <string name="one_or_more_tutoral_left_regex">[B+]</string>
+    <string name="one_or_more_tutorial_text">In regular expression notation it is possible to have a character one or more times by using the ‘+’. This means that the character must be there one or more times. In the example above one of the expressions is ‘B+’ which means there must be a B in the answer since the ‘+’ requires at least 1 ‘B’.</string>
+    <string name="one_or_more_tutorial_upper_regex">A | B | C</string>
+    <string name="one_or_more_tutorial_left_regex">B+</string>
 
-    <string name="backreference_tutoral_text">Some text giving some basic instructions on what  backrefernce is and how to solve the puzzle. Place holder text. </string>
-    <string name="backreference_upper_regex">example Regex here</string>
-    <string name="backreference_left_regex">example regex here</string>
+    <string name="backreference_tutorial_text">In regular expression notation it is possible to refer to the previously captured expression using the backreference symbol ‘\’. In the example above we have the regular expression “[A]” and a backreference to it. The “[A]” part could be any regular expression. In the example above ‘A’ is the correct answer since the backreference refers to the “[A]” and the other expression can accept an A, B, or C. </string>
+    <string name="backreference_upper_regex">[A]\\1</string>
+    <string name="backreference_left_regex">A | B | C</string>
     <!-- END of Strings used in tutorial_activity  -->
 
 </resources>
